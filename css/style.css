@@ -73,18 +73,27 @@ nav{
 /*----------------------------------------------*/
 
 .header{
-	display: flex;
-	flex-wrap: wrap;
+	display: block;
+	-webkit-height:400px;
+	height:500px;
+	-moz-height:500px;
+	-moz-background-image:url("..//images/banner_main.jpg");
+	background-image:url("..//images/banner_main.jpg");
+	-webkit-background-image:url("..//images/banner_main.jpg");
+	background-position: center;
+	background-repeat: repeat-y;
+
 }
+
 
 .header div{
 	/*line-height: 200px;*/
-	padding:50px 0;
-	width:100%;
-	flex-direction:row;
+	/*padding:50px 0;*/
+	/*width:100%;*/
+	/*flex-direction:row;*/
 	/*background-color: green;*/
 	/*border:1px solid red;*/
-	align-items:flex-start;
+	/*align-items:flex-start;*/
 	/*height: 500px;*/
 }
 
@@ -95,7 +104,8 @@ nav{
 } 
 
 .banner_main{
-	width:100%;
+	/*-moz-width:100%;
+	width:100%;*/
 }
 
 .header .info{
@@ -109,6 +119,7 @@ nav{
 .flex-container{
 	display: flex;
 	flex-wrap: nowrap;
+	-webkit-display:flex;
 }
 
 .flex-container > ul > li{
@@ -137,6 +148,9 @@ nav{
   	position: fixed;
   	overflow: 100;
     width: 100%;
+    -moz-top:0;
+    -moz-position:fixed;
+    -moz-width:100%;
 }
 
 .top-nav1 a{
@@ -222,8 +236,10 @@ dl {
 }
 
 .col-4{
-	border-top:2px solid black;
-	border-left:2px solid blue;
-	border-right:2px solid blue;
+
 }
 
+.services h1{
+	border-bottom:3px solid black;
+	text-shadow: 0px 0px 8px #ebebeb;
+}
