@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans');
 *{	
 	box-sizing: border-box;
 	margin:0;
 	padding:0;
+
 }	
 
 body{
@@ -236,6 +238,10 @@ dl {
 	width:100%;
 }
 
+.col-md p{
+	font-family: 'IBM Plex Sans', sans-serif;
+}
+
 .services h1{
 	border-bottom:5px solid #3264AA;
 }
@@ -251,6 +257,7 @@ dl {
 }
 
 .ief-text{
+	font-family: 'IBM Plex Sans', sans-serif;
 	text-align: center;
 	font-size: 20px;
 	/*text-indent: 40px;*/
@@ -282,4 +289,32 @@ dl {
 .foot-end li{
 	display: block;
 	width:10%;
+}
+
+@media only screen and (max-width: 1100px){
+	.header{
+		background-size:490px;
+		height:200px;
+		width:100%;
+	}
+
+	.foot-end ol{
+	width:20%;
+	margin:0 auto;
+	}
+}
+
+@media only screen and (max-width: 900px){
+	.foot-end ol{
+	width:30%;
+	margin:0 auto;
+	}
+}
+
+@media only screen and (max-width: 300px){
+	.foot-end ol{
+	width:40%;
+	margin:0 auto;
+	}
+
 }
